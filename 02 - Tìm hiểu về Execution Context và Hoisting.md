@@ -17,3 +17,7 @@ Trong một ứng dụng thì chỉ có 1 ngữ cảnh thực thi toàn cục (G
 2. Execution Phase (Giai đoạn thực thi)
 
 Ở giai đoạn Creation Phase này nó sẽ làm rất nhiều việc, một trong số đó là setup memory (Khởi tạo ra biến toàn cục, cục bộ,... để lưu trữ biến, hàm,...) Sau khi khởi tạo xong thì nó mới qua giai đoạn thực thi (Exection Phase). Khi mà chương trình con thực thi xong thì Execution Context sẽ bị xóa bỏ. Đồng thời JS Engine sẽ thu dọn memory mà ở giai đoạn Create Phase đã khởi tạo ra.
+
+Có thể đọc đến đây, sẽ có nhiều bạn chưa hình dung được. Yên tâm, ở phần dưới đây mình sẽ mô phỏng từng bước trong giai đoạn từ lúc nó khởi tạo cho đến khi nó xóa bỏ nên đừng quá lo. Bạn chỉ cần hiểu ý nghĩa của thuật ngữ này là đủ rồi.
+
+## Tìm hiểu giai đoạn thực thi (Creation Phase)
