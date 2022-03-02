@@ -20,4 +20,4 @@ Trong một ứng dụng thì chỉ có 1 ngữ cảnh thực thi toàn cục (G
 
 Có thể đọc đến đây, sẽ có nhiều bạn chưa hình dung được. Yên tâm, ở phần dưới đây mình sẽ mô phỏng từng bước trong giai đoạn từ lúc nó khởi tạo cho đến khi nó xóa bỏ nên đừng quá lo. Bạn chỉ cần hiểu ý nghĩa của thuật ngữ này là đủ rồi.
 
-## Tìm hiểu giai đoạn thực thi (Creation Phase)
+## Tìm hiểu giai đoạn khởi tạo (Creation Phase)
