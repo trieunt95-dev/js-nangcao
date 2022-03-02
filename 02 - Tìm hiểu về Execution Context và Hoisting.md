@@ -20,4 +20,17 @@ Trong một ứng dụng thì chỉ có 1 ngữ cảnh thực thi toàn cục (G
 
 Có thể đọc đến đây, sẽ có nhiều bạn chưa hình dung được. Yên tâm, ở phần dưới đây mình sẽ mô phỏng từng bước trong giai đoạn từ lúc nó khởi tạo cho đến khi nó xóa bỏ nên đừng quá lo. Bạn chỉ cần hiểu ý nghĩa của thuật ngữ này là đủ rồi.
 
-## Tìm hiểu giai đoạn khởi tạo (Creation Phase)
+## Giai đoạn khởi tạo (Creation Phase)
+
+Ở phần trên, mình đã nói đến khái niệm mới mà trước khi Execution Context được khởi tạo thì nó luôn luôn thực hiện 2 giai đoạn đó chính là Creation Phase và Execution Phase. Tuy nhiên, Execution Phase là giai đoạn nó thực thi nên không có vấn đề gì để nói. Vì vậy nên chúng ta sẽ chỉ tìm hiểu giai đoạn nó khởi tạo hay còn gọi là Creation Phase thôi nhé.
+
+Nếu bạn tìm hiểu sâu về giai đoạn Creation Phase này, bạn sẽ hiểu được những vấn đề như Scope Chain, từ khóa this cũng như là khái niệm về hoisting và cách hoisting hoạt động trong JS.
+
+Trong giai đoạn Creation Phase này, nó sẽ thực hiện 3 việc chính đó là:
+
+1. **Setup Memory (Variables Enviroment):** Ở bước này, nó sẽ setup các biến, hàm, lưu trữ giá trị mà có sử dụng trong chương trình. Phải có bước này thì chương trình mới có thể hoạt động được.
+2. **Định nghĩa Scope Chain:** trong JS, có rất nhiều dạng scope (Tầm vực) như: Global Scope, Script Scope, Block Scope và Function Scope
+3. **Ràng buộc từ khóa this:** ngoại trừ Arrow Function thì nó cũng sẽ có 3 kiểu ràng buộc:
+    - Default Binding (Ràng buộc mặc định)
+    - Implicit Binding (Ràng buộc ngầm)
+    - Explicit Binding (Ràng buộc tường minh)
