@@ -28,7 +28,7 @@ Memory Heap hay còn gọi là bộ nhớ Heap. Không chỉ trong JS mà trong 
 
 #### Call stack
 
-Call stack hay còn gọi là hàng đợi thực thi. Tại một thời điểm, hàm nào được thực thi thì hàm đó sẽ được đẩy vào call stack. Khi hàm nào thực thi xong nó sẽ remove ra khỏi call stack (Thuật ngữ remove gọi là pop. Pop một phần tử ra khỏi đỉnh call stack).
+Call stack hay còn gọi là hàng đợi thực thi. Tại một thời điểm, hàm nào được thực thi thì hàm đó sẽ được đẩy vào call stack. Khi nào thực thi xong nó sẽ remove ra khỏi call stack (Thuật ngữ remove gọi là pop. Pop một phần tử ra khỏi đỉnh call stack).
 
 Ngoài ra, Call Stack chỉ xử lý được các tác vụ đồng bộ trong JS vì bản thân JS là ngôn ngữ Single Thread nên không thể thực thi song song cùng 1 lúc 2 tác vụ. Vì thế, để xử lý được các tác vụ bất đồng bộ thì cần phải nhờ sự hỗ trợ của Event Loop, Callback Queues.
 
