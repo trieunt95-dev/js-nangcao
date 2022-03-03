@@ -34,3 +34,29 @@ Trong giai đoạn Creation Phase này, nó sẽ thực hiện 3 việc chính �
     - Default Binding (Ràng buộc mặc định)
     - Implicit Binding (Ràng buộc ngầm)
     - Explicit Binding (Ràng buộc tường minh)
+
+## Creation Phase hoạt động như thế nào?
+
+Mình lười vẽ sơ đồ quá nên chỗ này mình sẽ chèn video giải thích nha :v :D
+
+<!-- Xét ví dụ bên dưới mình có đoạn mã JS như sau:
+
+```js
+var age = 18;
+let firstName = 'Nguyễn Tuấn';
+let lastName = 'Triều';
+
+const yearBirthday = 2000;
+
+function getAge(year) {
+    return 2022 - year;
+}
+
+var getFullName = function (firstName, lastName) {
+    return `${firstName} ${lastName}`;
+};
+```
+
+Khi mà chương trình này chạy lên trên trình duyệt, việc đầu tiên nó sẽ setup memory và khởi tạo ngữ cảnh thực thi (Global Execution Context). Mặc định trình duyệt sẽ khởi tạo biến có tên là global. Biến global này trong môi trường trình duyệt nó chính là biến window và khi global memory được chạy thì nó sẽ ràng buộc this. Thì this này cũng chính là biến window và cũng chính là biến global. Vậy thì theo cách nó hoạt động, mình sẽ có hình minh họa như sau:
+
+![JS runtime](./images/1.png) -->
